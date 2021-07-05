@@ -27,7 +27,7 @@ def MaclaurinSeries(func, noOfTerms, repeatingUnitA, repeatingUnitB):
     approximations = []
 
     print("\n")
-    for n in range(noOfTerms-1):
+    for n in range(noOfTerms):
         temp = diff(func, x, repeatingUnitA*n+repeatingUnitB)
         lamF = lambdify(x, temp, modules=['numpy'])
         frac = Rational(int(lamF(0)), factorial(repeatingUnitA*n+repeatingUnitB))
@@ -41,10 +41,10 @@ def MaclaurinSeries(func, noOfTerms, repeatingUnitA, repeatingUnitB):
     plt.plot(xVals, yVals)
 
     legend = ["n = " + functionName]
-    for i in range(noOfTerms):
+    for i in range(noOfTerms+1):
         legend.append("n = " + str(repeatingUnitA*i+repeatingUnitB))
 
-    for i in range(noOfTerms-1):
+    for i in range(noOfTerms):
         yVals = []
         xVals = np.linspace(-10, 10, num=100)
 
