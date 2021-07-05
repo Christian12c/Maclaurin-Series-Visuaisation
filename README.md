@@ -1,4 +1,4 @@
-# Maclaurin Series Visuaisation
+# Maclaurin Series Visualisation
 
 The project was created to visualise how the addition of higher order Maclaurin series terms gives better and better approximations to the original function.
 
