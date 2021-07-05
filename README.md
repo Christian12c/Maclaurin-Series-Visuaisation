@@ -11,4 +11,4 @@ When the executable file is run, the following prompt will come up: " Enter the 
 As successive terms of some Maclaurin series are the same, we can specify an arithmetic sequence that selects the graphs that are to be plotted. Sin(x) for example is an odd function so it only has non-zero coefficients for odd powers and therefore the graph up to the 2n th power is the same as the graph up to the 2n-1 th power. In this case, by setting a = 2 and b = 1, we get odd powered approximations with no two being the same.
 
 
-For example, if we typed in "MaclaurinSeries(sin(x), 10, 2, 1)" and pressed "Enter", 
+For example, if we typed in "MaclaurinSeries(sin(x), 10, 2, 1)" and pressed "Enter", the program would plot 10 approximations of sin(x) with the highest power of each starting at n = 1 and ending at n = 19. 
